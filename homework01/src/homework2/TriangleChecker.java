@@ -8,11 +8,11 @@ public class TriangleChecker {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Введите длину трех сторон треугольника:");
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		int c = sc.nextInt();
+		int sideA = sc.nextInt();
+		int sideB = sc.nextInt();
+		int sideC = sc.nextInt();
 		
-		if(a + b > c && a + c > b && b + c > a) {
+		if(sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
 			System.out.println("Такой треугольник существует.");
 		}else {
 			System.out.println("Такого треугольника не существует.");
